@@ -1,0 +1,177 @@
+[2019-07-17T18:06:44.300] [ERROR] app - Something went wrong: { Error: URL Not found
+    at /usr/src/app/src/server.js:32:13
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/usr/src/app/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at /usr/src/app/node_modules/express/lib/router/index.js:635:15
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/usr/src/app/node_modules/express/lib/router/index.js:174:3)
+    at router (/usr/src/app/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at allowOriginsHeaders (/usr/src/app/src/middlewares/allow-origins.js:18:3)
+  code: 'E4041',
+  detail: { request: 'GET /vm?_=1563361603962' },
+  status: 404,
+  message: 'URL Not found' }
+[2019-07-17T18:06:46.639] [ERROR] app - Something went wrong: { Error: URL Not found
+    at /usr/src/app/src/server.js:32:13
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/usr/src/app/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at /usr/src/app/node_modules/express/lib/router/index.js:635:15
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/usr/src/app/node_modules/express/lib/router/index.js:174:3)
+    at router (/usr/src/app/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at allowOriginsHeaders (/usr/src/app/src/middlewares/allow-origins.js:18:3)
+  code: 'E4041',
+  detail: { request: 'GET /vm?_=1563361606378' },
+  status: 404,
+  message: 'URL Not found' }
+[2019-07-17T18:06:59.851] [ERROR] app - Something went wrong: { Error: URL Not found
+    at /usr/src/app/src/server.js:32:13
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/usr/src/app/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at /usr/src/app/node_modules/express/lib/router/index.js:635:15
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/usr/src/app/node_modules/express/lib/router/index.js:174:3)
+    at router (/usr/src/app/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at allowOriginsHeaders (/usr/src/app/src/middlewares/allow-origins.js:18:3)
+  code: 'E4041',
+  detail: { request: 'GET /vm?_=1563361619364' },
+  status: 404,
+  message: 'URL Not found' }
+[2019-07-17T18:08:38.777] [ERROR] app - Something went wrong: { Error: URL Not found
+    at /usr/src/app/src/server.js:32:13
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/usr/src/app/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at /usr/src/app/node_modules/express/lib/router/index.js:635:15
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/usr/src/app/node_modules/express/lib/router/index.js:174:3)
+    at router (/usr/src/app/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at allowOriginsHeaders (/usr/src/app/src/middlewares/allow-origins.js:18:3)
+  code: 'E4041',
+  detail: { request: 'GET /vm?_=1563361718368' },
+  status: 404,
+  message: 'URL Not found' }
+[2019-07-17T18:14:29.679] [ERROR] app - Something went wrong: { Error: URL Not found
+    at /usr/src/app/src/server.js:32:13
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/usr/src/app/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at Immediate.next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at Immediate.<anonymous> (/usr/src/app/node_modules/express/lib/router/index.js:635:15)
+    at runCallback (timers.js:812:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  code: 'E4041',
+  detail: { request: 'GET /vm?_=1563362069218' },
+  status: 404,
+  message: 'URL Not found' }
+[2019-07-17T18:14:43.083] [ERROR] app - Something went wrong: { Error: URL Not found
+    at /usr/src/app/src/server.js:32:13
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/usr/src/app/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at Immediate.next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at Immediate.<anonymous> (/usr/src/app/node_modules/express/lib/router/index.js:635:15)
+    at runCallback (timers.js:812:20)
+    at tryOnImmediate (timers.js:768:5)
+    at processImmediate [as _immediateCallback] (timers.js:745:5)
+  code: 'E4041',
+  detail: { request: 'GET /vm?_=1563362082530' },
+  status: 404,
+  message: 'URL Not found' }
+[2019-07-17T18:19:59.803] [ERROR] app - Something went wrong: { Error: URL Not found
+    at /usr/src/app/src/server.js:32:13
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at jsonParser (/usr/src/app/node_modules/body-parser/lib/types/json.js:110:7)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at /usr/src/app/node_modules/express/lib/router/index.js:635:15
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:260:14)
+    at Function.handle (/usr/src/app/node_modules/express/lib/router/index.js:174:3)
+    at router (/usr/src/app/node_modules/express/lib/router/index.js:47:12)
+    at Layer.handle [as handle_request] (/usr/src/app/node_modules/express/lib/router/layer.js:95:5)
+    at trim_prefix (/usr/src/app/node_modules/express/lib/router/index.js:317:13)
+    at /usr/src/app/node_modules/express/lib/router/index.js:284:7
+    at Function.process_params (/usr/src/app/node_modules/express/lib/router/index.js:335:12)
+    at next (/usr/src/app/node_modules/express/lib/router/index.js:275:10)
+    at allowOriginsHeaders (/usr/src/app/src/middlewares/allow-origins.js:18:3)
+  code: 'E4041',
+  detail: { request: 'GET /vm.' },
+  status: 404,
+  message: 'URL Not found' }

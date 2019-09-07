@@ -1,0 +1,88 @@
+version: '3'
+services:
+  reverse-proxy:
+    image: traefik # The official Traefik docker image
+    command: --api --docker # Enables the web UI and tells Træfik to listen to docker
+    ports:
+      - "80:80"     # The HTTP port
+      - "8080:8080" # The Web UI (enabled by --api)
+
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock # So that Traefik can listen to the Docker events
+    environment:
+      - TZ=Asia/Bangkok
+
+  php:
+    build: ./build/php
+    volumes:
+      - ./nginx_src/:/var/www/html
+      - ./nginx_src/php.ini:/usr/local/etc/php/conf.d/php.ini
+    labels:
+      - "traefik.frontend.rule=PathPrefixStrip: /"
+      - "traefik.port=80"
+    environment:
+      - VIRTUAL_HOST_WEIGHT=1
+      - VIRTUAL_HOST=*
+
+
+  node:
+    build: ./build/node
+    volumes:
+      - ./node_src:/usr/src/app
+    links:
+      - mysql
+      - reverse-proxy
+    command: ["npm","run","dev-noclear"]
+    labels:
+      - "traefik.backend=api"
+      - "traefik.frontend.rule=PathPrefixStrip: /api"
+      - "traefik.port=80"
+    environment:
+      - TZ=Asia/Bangkok
+
+  api_doc:
+    image: nginx
+    volumes:
+      - ./node_src/apidoc:/usr/share/nginx/html:ro
+    labels:
+      - "traefik.backend=explorer"
+      - "traefik.frontend.rule=PathPrefix: /apiexplorer"
+      - "traefik.port=80"
+    environment:
+      - TZ=Asia/Bangkok
+
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    volumes:
+      - ./build/mysql:/docker-entrypoint-initdb.d
+      - ./tmp/mysql:/var/lib/mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_HOST=%
+      - MYSQL_DATABASE=MFESS
+      - MYSQL_ROOT_PASSWORD=plokij123654
+      - TZ=Asia/Bangkok
+
+  portainer:
+    image: portainer/portainer
+    restart: unless-stopped
+    command: -H unix:///var/run/docker.sock
+    ports:
+      - 9000:9000
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./portainer_src:/data
+
+  cadvisor:
+    image: google/cadvisor
+    restart: always
+    ports:
+      - "8081:8080"
+    volumes:
+      - /var/run:/var/run:rw
+      - /sys:/sys:ro
+      - /var/lib/docker/:/var/lib/docker:ro
+    labels:
+      - "traefik.frontend.auth.basic=user:$$apr1$$dcFzu9bs$$EnzHP2UvAFjJER844vv010" 
